@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.container .item{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: absolute;
+}
+.container .item img{
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%);
+}
+.container .i-2{
+    top: 20%;
+    left: 0;
+}
+.container .item h1{
+    font-size: 172px;
+    color: red;
+    text-align: center;
+}
