@@ -1,0 +1,7 @@
+header li{
+    list-style: none;
+    display: inline;
+}
+header li a{
+    text-decoration: none;
+}

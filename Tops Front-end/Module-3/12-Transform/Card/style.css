@@ -1,0 +1,30 @@
+.container{
+    height: 500px;
+    width: 50%;
+    border: 1px solid red;
+    margin: auto;
+    position: relative;
+}
+.container .box{
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    transition: 2.5s;
+    /* backface-visibility: hidden; */
+}
+.container .box img{
+    height: 100%;
+    width: 100%;
+}
+.container .b-1{
+    transform: rotateY(180deg);
+}
+.container .b-2{
+    transform: rotateY(0deg);
+}
+.container:hover .b-1{
+    transform: rotateY(0deg);
+}
+.container:hover .b-2{
+    transform: rotateY(180deg);
+}
