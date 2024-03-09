@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With_ReturnType_Without_Parameter</title>
+</head>
+<body>
+    <script>
+        let x , y;
+
+        get();
+        function get()
+        {
+            x = parseInt(window.prompt("Enter the value of x :"));
+            y = parseInt(window.prompt("Enter the value of y :"));
+        }
+        function add()
+        {
+            return x + y;
+        }
+        document.write(`Addition is : ${add()}`);
+        // document.write(`Addition is : ${x + y}`);
+    </script>
+</body>
+</html>

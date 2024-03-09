@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-6</title>
+    <style>
+        .buttons{
+            height: 60px;
+            width: 450px;
+            /* border: 1px solid; */
+            /* margin-top: 50px; */
+            padding: 20px 20px;
+        }
+        #btn1{
+            height: 50px;
+            width: 100px;
+            border: 1px solid;
+            /* padding: 20px; */
+        }
+        #btn2{
+            height: 50px;
+            width: 100px;
+            border: 1px solid;
+            /* padding: 20px; */
+        }
+        #btn3{
+            height: 50px;
+            width: 100px;
+            border: 1px solid;
+            /* padding: 20px; */
+        }
+        #btn4{
+            height: 50px;
+            width: 100px;
+            border: 1px solid;
+            /* padding: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button type="button" id="btn1" onclick="add()">Addition</button>
+        <button type="button" id="btn2" onclick="sub()">Subtraction</button>
+        <button type="button" id="btn3" onclick="mul()">Multiplication</button>
+        <button type="button" id="btn4" onclick="div()">Division</button>
+    </div>
+    <script>
+        let x , y;
+        let btn1 = document.getElementById('btn1');
+        let btn2 = document.getElementById('btn2');
+        let btn3 = document.getElementById('btn3');
+        let btn4 = document.getElementById('btn4');
+
+        add();
+        sub();
+        mul();
+        div();
+        get();
+        function get()
+        {
+            x = parseInt(window.prompt("Enter The value of x:"));
+            y = parseInt(window.prompt("Enter The value of y:"));
+        }
+        function add()
+        {
+            if(x + y)
+            {
+                document.write(`Addition is : ${x + y}`);
+            }
+        }
+        function sub()
+        {
+            if(x - y)
+            {
+                document.write(`Subtraction is : ${x - y}`);
+            }
+        }
+        function mul()
+        {
+            if(x * y)
+            {
+                document.write(`Multiplication is : ${x * y}`);
+            }
+        }
+        function div()
+        {
+            if(x / y)
+            {
+                document.write(`Division is : ${x / y}`);
+            }
+        }
+    </script>
+</body>
+</html>
