@@ -1,0 +1,392 @@
+@media(max-width: 500px){
+    body{
+        border: 1px solid #fff;
+        height: auto;
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo{
+        margin-left: -27%;
+    }
+    .navbar, .login{
+        display: none;
+    }
+    .menu{
+        margin-top: 62px;
+        margin-left: 420px;
+        display: block;
+    }
+    .offer p{
+        display: none;
+    }
+    .offer span{
+        margin-top: -30px;
+        margin-left: -425px;
+        border-radius: 100px;
+    }
+    .manage{
+        height: 120px;
+        width: 318px;
+        text-align: center;
+        top: 220px;
+        margin-left: -245px;
+        /* border: 1px solid; */
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .info{
+        height: 72px;
+        width: 318px;
+        /* border: 1px solid; */
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        left: 95px;
+        top: 362px;
+    }
+    .email{
+        border: none;
+    }
+    .email input{
+        height: 52px;
+        width: 318px;
+        border-radius: 4px;
+        left: -387px;
+        top: -40px;
+        background-color: #e1e5ea;
+        text-align: center;
+    }
+    .email button{
+        height: 52px;
+        width: 318px;
+        border-radius: 4px;
+        left: -387px;
+        top: 25px;
+        background-color: #794CFF;
+        text-align: center;
+    }
+    .img-1{
+        height: 273px;
+        width: 384px;
+        left: 60px;
+        top: 600px;    
+    }
+    .trusted{
+        height: 11px;
+        width: 318px;
+        /* border: 1px solid; */
+        font-size: 11px;
+        line-height: 11px;
+        text-align: center;
+        left: 92px;
+        top: 900px;
+    }
+    .logos{
+        height: 25px;
+        width: 375px;
+        /* border: 1px solid red; */
+        margin-left: -227px;
+        margin-top: -350px;
+    }
+    .logos .logo-1, .logo-2, .logo-3, .logo-4, .logo-5{
+        height: 20px;
+        width: 65px;
+        /* border: 1px solid; */
+        margin: 0px 5px;
+    }
+    .logos .logo-1 img, .logo-2 img, .logo-3 img, .logo-4 img, .logo-5 img{
+        height: 20px;
+        width: 60px;
+    }
+
+    /* --------------------Section-2-------------------- */
+    .boxes{
+        height: 950px;
+        width: 100%;
+        margin-top: -350px;
+    }
+    .box-1 img{
+        height: 350px;
+        width: 450px;
+        /* border: 1px solid blue; */
+        top: 40px;
+        left: 25px;
+    }
+    .box-2 .sublist-1{
+        height: 130px;
+        width: 450px;
+        /* border: 1px solid red; */
+        left: -840px;
+        top: 425px;
+    }
+    .sl-1::before{
+        rotate: 90deg;
+        height: 450px;
+        width: 8px;
+        top: -100px;
+        left: 221px;
+    }
+    .box-2 .sublist-2{
+        height: 130px;
+        width: 450px;
+        /* border: 1px solid blue; */
+        top: 555px;
+        left: -840px;
+    }
+    .hr-1{
+        width: 450px;
+        top: 685px;
+        left: -840px;
+    }
+    .box-2 .sublist-3{
+        height: 130px;
+        width: 450px;
+        /* border: 1px solid red; */
+        top: 685px;
+        left: -840px;
+    }
+    .hr-2{
+        width: 450px;
+        top: 815px;
+        left: -840px;
+    }
+    .box-2 .sublist-4{
+        height: 130px;
+        width: 450px;
+        /* border: 1px solid blue; */
+        top: 815px;
+        left: -840px;
+    }
+
+    /* --------------------Section-3-------------------- */
+    .section-3{
+        height: 925px;
+        width: 100%;
+        margin-top: -20px;
+        display: block;
+    }
+    .section-3 .easy{
+        height: 20px;
+        width: 275px;
+        /* border: 1px solid; */
+        margin-left: -390px; 
+        font-size: 18px;
+        text-align: center;
+    }
+    .section-3 .layout-a{
+        display: block;
+        position: relative;
+    }
+    .section-3 .layout-1{
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: -10px;
+    }
+    .layout-1 img{
+        left: 200px;
+    }
+    .layout-1 .abc{
+        left: 130px;
+    }
+    .layout-1 .xyz{
+        left: 100px;
+    }
+    .section-3 .layout-2{
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 190px;
+    }
+    .layout-2 img{
+        left: 200px;
+    }
+    .layout-2 .abc{
+        left: 160px;
+    }
+    .layout-2 .xyz{
+        left: 130px;
+    }
+    .section-3 .layout-3{
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 390px;
+    }
+    .layout-3 img{
+        left: 200px;
+    }
+    .layout-3 .abc{
+        left: 165px;
+    }
+    .layout-3 .xyz{
+        left: 100px;
+    }
+    .benefits{
+        display: block;
+        height: 52px;
+        width: 318px;
+        position: absolute;
+        top: 830px;
+        left: 90px;
+        color: #7259fa;
+        font-size: 18px;
+        border: none;
+        border-radius: 4px;
+    }
+    .section-3 .layout-b{
+        display: none;
+    }
+    .Section-4{
+        height: 300px;
+        /* margin-top: 200px; */
+        background: none;
+    }
+    .Section-4 .part-1{
+        /* margin-top: 200px; */
+        width: 500px;
+        position: absolute;
+        top: 300px;
+        /* left: -80px; */
+        /* border: 1px solid blue; */
+        /* height: 100px; */
+        text-align: center;
+    }
+    .part-1 span{
+        /* border: 1px solid lime; */
+        left: 80px;
+        top: 70px;
+    }
+    .part-1 p{
+        /* border: 1px solid black; */
+        left: 60px;
+        top: 200px;
+    }
+    .part-1 button{
+        height: 52px;
+        width: 318px;
+        left: 85px;
+        top: 300px;
+    }
+    .Section-4 .part-2 img{
+        height: 300px;
+        width: 425px;
+        position: absolute;
+        /* right: 200px; */
+        left: 37px;
+        top: 30px;
+    }
+    .Section-5{
+        top: 1900px;
+    }
+    .Section-5 .customer{
+        height: 48px;
+        width: 322px;
+        font-size: 18px;
+        line-height: 24px;
+        /* border: 1px solid blue; */
+        left: 85px;
+        top: -50px;
+    }
+    .Section-5 .team{
+        height: 160px;
+        width: 336px;
+        /* border: 1px solid green; */
+        left: 80px;
+        top: 30px;
+    }
+    .border{
+        display: none;
+    }
+    .person .person-1 img{
+        position: absolute;
+        left: 175px;
+        top: -170px;
+    }
+    .person .person-1 .name{
+        left: 190px;
+        top: -110px;
+    }
+    .person .person-1 .profession{
+        position: absolute;
+        left: 92px;
+        top: -60px;
+    }
+    .person .person-2, .person-3{
+        display: none;
+    }
+    .app{
+        height: 292px;
+        width: 500px;
+        top: 300px;
+        border-radius: 0px;
+    }
+    .app .employee{
+        left: 90px;
+        top: 35px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .images .app-1{
+        margin-left: -500px;
+        margin-top: 55px;
+    }
+    .images .app-2{
+        margin-left: -195px;
+        margin-bottom: -75px;
+    }
+    footer{
+        margin-top: 320px;
+        height: 483px;
+    }
+    .part .main-1{
+        /* border: 1px solid red; */
+        position: absolute;
+    }
+    .part .main-2{
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 90px;
+        left: 50px;
+    }
+    .part .main-3{
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 145px;
+        left: 50px;
+    }
+    .part .main-4{
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+    .part .sub{
+        display: none;
+    }
+    .sub-1 img{
+        margin-top: 220px;
+        margin-left: -375px;
+    }
+    .sub-2 img{
+        margin-top: 15px;
+        margin-left: -375px;
+    }
+    .i1, .i2, .i3 .fa-solid{
+        display: block;
+    }
+    .hr{
+        margin-top: 20px;
+    }
+    .copyright .cprt{
+        height: 14px;
+        width: 321px;
+        margin-top: -20px;
+        /* border: 1px solid red; */
+        margin-left: -250px;
+        color: #D9DBE1;
+        margin-left: -200px;
+    }
+}
