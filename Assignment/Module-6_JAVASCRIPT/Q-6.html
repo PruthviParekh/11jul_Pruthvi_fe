@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-6</title>
+    <style>
+        body{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h3><u>What are undeclared and undefined variables?</u></h3>
+    <pre>
+        document.getElementById('addDivButton').addEventListener('click', function () {
+           var newDiv = document.createElement('div');
+           newDiv.className = 'new-div';
+           newDiv.innerHTML = 'New Div created by clicking the button';
+           document.body.appendChild(newDiv);
+       }); 
+   </pre>
+       <button id="addDivButton">Add Div</button>
+
+       <script>
+        document.getElementById('addDivButton').addEventListener('click', function () {
+            var newDiv = document.createElement('div');
+            newDiv.className = 'new-div';
+            newDiv.innerHTML = 'New Div';
+            document.body.appendChild(newDiv);
+        });
+    </script>
+</body>
+</html>

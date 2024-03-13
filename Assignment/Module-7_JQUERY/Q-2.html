@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-2</title>
+    <style>
+        body {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3><u>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?</u></h3>
+
+    <p>
+        - To apply CSS using jQuery, you can use the .css() method which is used to get or set a style property for the selected content. <br>
+        - To Add class using jQuery, you can use the .addClass() method to add a class to an element. <br>
+        - To Remove class using jQuery, you can use the .removeClass() method to remove a class from an element. <br>
+        - The animate() function is used to creating animations on the web page. <br><br>
+
+        <b><u>1> Apply CSS</u></b> <br><br>
+        $("#id").css("property","value"); <br><br>
+        <b><u>- Example :-</u></b> <br><br>
+        $("p").css("color", "red"); // Changes all paragraphs color to red <br><br>
+        <hr><br>
+
+        <b><u>2> Add/Remove Class</u></b> <br><br>
+        //Adding a class <br>
+        $(".classname").addClass("newclass"); <br><br>
+        <b><u>- Example :-</u></b> <br><br>
+        $("button").click(function(){ <br>
+        $(this).addClass("active"); //Adding active class to clicked button <br>
+        }); <br><br>
+        <hr><br>
+
+        //Removing a class <br>
+        $(".classname").removeClass("oldclass"); <br><br>
+        <b><u>- Example :-</u></b> <br><br>
+        $("button").click(function(){ <br>
+        $(this).removeClass("active"); //Removes active class from mouse outed button <br>
+        }); <br><br>
+        <hr><br>
+
+        <b><u>3> jQuery animation</u></b> <br><br>
+        $("selector").animate({propertyname:"value"},speed); <br><br>
+        <b><u>- Example :-</u></b> <br><br>
+        $("#box").click(function(){ <br>
+        $(this).animate({left:'+=150px', opacity:'0.5'}, "slow"); <br>
+        });
+    </p>
+    <hr>
+</body>
+
+</html>
