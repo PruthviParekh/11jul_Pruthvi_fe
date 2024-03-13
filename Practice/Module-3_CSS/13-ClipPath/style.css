@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* background: url('https://images.unsplash.com/photo-1682687982141-0143020ed57a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D'); */
+    /* background-size: 50% 50%; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+.clippath{
+    height: 600px;
+    width: 100%;
+    background-image: url('https://plus.unsplash.com/premium_photo-1700502030330-85660225b0c3?q=80&w=1326&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    backdrop-filter: brightness(70%);
+    background-size: 100% 100%;
+    /* -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%); */
+clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100%);            
+}
+.clippath ul{
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.clippath ul li{
+    list-style: none;
+    display: inline;
+    padding: 70px;
+    margin: 18px;
+}
+.clippath ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 23px;
+}
