@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without_ReturnType_With_Parameter</title>
+</head>
+<body>
+    <script>
+        get(10 , 2)
+        function get(x , y)
+        {
+            x = parseInt(window.prompt("Enter the value of x :"));
+            y = parseInt(window.prompt("Enter the value of y :"));
+            if(y <= 0)
+                alert("Division is not possible");
+            else
+                document.write(`Division of x and y is : ${x / y}`);
+        }
+    </script>
+</body>
+</html>
