@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-20</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>What is the difference between && and || in JavaScript?</u></h3>
+    <pre>
+<u>1> Logical AND ('&&') :</u>
+
+- Symbol : &&
+- Operation : Returns true if both operands are truthy; otherwise, it returns false.
+- Short-circuit evaluation : If the first operand is falsy, the second operand is not evaluated because the overall expression can never<br>  be true.
+- Usage : Used to ensure multiple conditions are true.
+
+- <u>Syntax :</u> condition1 && condition2
+
+- <u>Example :</u> 
+
+true && true   // true
+true && false  // false
+false && true  // false
+false && false // false
+
+let a = false && (console.log('This will not print'), true); //'This will not print' is not evaluated
+
+<u>2> Logical OR ('||') :</u>
+
+- Symbol : ||
+- Operation : Returns true if at least one of the operands is truthy; otherwise, it returns false.
+- Short-circuit evaluation : If the first operand is truthy, the second operand is not evaluated because the overall expression is<br>  already true.
+- Usage : Used to ensure at least one condition is true.
+
+- <u>Syntax :</u> condition1 || condition2
+
+- <u>Example :</u>
+
+true || true   // true
+true || false  // true
+false || true  // true
+false || false // false
+
+let b = true || (console.log('This will not print'), false); //'This will not print' is not evaluated
+
+-> <b><u>Combine Example :</u></b>
+
+&lt;script&gt;
+    let x = 5;
+    let y = 10;
+
+    if (x > 3 && y < 15) {
+        document.write("Both conditions are true"); //This will print
+    }
+
+    if (x > 6 || y < 15) {
+        document.write("At least one condition is true"); //This will print
+    }
+&lt;/script&gt;
+
+- <u>Output :</u>
+
+Both conditions are true
+At least one condition is true
+    </pre>
+    <hr>
+</body>
+
+</html>

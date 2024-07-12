@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-76</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h3><u>What are all the looping structures in JavaScript?</u></h3>
+    <pre>
+- Loop is used to execute the line of statement multiple times.
+
+- There are two types of loop.
+
+- <b><u>1> Entry Control Loop :</u></b>
+    
+  For loop
+  For-in loop
+  For-of loop
+  For-each loop
+  While loop
+        
+- <b><u>2> Exit Control Loop :</u></b>
+        
+  Do-while loop
+    </pre>
+    <hr>
+    <pre>
+- <b><u>Example :</u></b>
+
+<b><u>1. For Loop</u></b>
+
+- <b><u>Syntax :</u></b>
+
+        for(condition)
+        {
+            //code
+        }
+
+- <b><u>Example :</u></b>
+
+        for(let i = 0; i <= 5; i++)
+        {
+            console.log("The value of i is : " + i);
+        }
+        <hr>
+<b><u>2. For-in Loop</u></b>
+
+- <b><u>Syntax :</u></b>
+
+        for(condition)
+        {
+            //code
+        }
+
+- <b><u>Example :</u></b>
+
+        let i;
+        let array = [10, 20, 'Hello', 'World', '*'];
+        for(i in array)
+        {
+            document.write(i + ',')
+        }   
+        <hr>
+- <b><u>3. For-of Loop</u></b>
+
+- <b><u>Syntax :</u></b>
+
+        for(condition)
+        {
+            //code
+        }
+
+- <b><u>Example :</u></b>
+
+        let i;
+        let array = [10, 20, 'Hello', 'World', '*'];
+        for(i of array)
+        {
+            document.write(i + ',')
+        }
+        <hr>
+- <b><u>4. While Loop</u></b>
+
+- <b><u>Syntax :</u></b>
+
+        while(condition)
+        {
+            //code
+        }
+
+- <b><u>Example :</u></b>
+
+        let i = 0;
+        while(i < 5)
+        { 
+            console.log("Hello World!!!"); 
+            i++;
+        }
+        <hr>
+- <b><u>5. Do-while Loop</u></b>
+
+- <b><u>Syntax :</u></b>
+
+        do
+        {
+            //code
+        }while(condition);
+
+- <b><u>Example :</u></b>
+
+        let x = 10;
+        do
+        {
+            console.log(x);
+            x--;
+        }while(x >= 0);
+    </pre>
+    <hr>
+</body>
+</html>

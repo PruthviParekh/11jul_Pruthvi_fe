@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-44</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Write a JavaScript program to capitalize first letter of a string?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        function capitalizeFirstLetter(str) {
+            if (str.length === 0) {
+                return '';
+            }
+
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        let inputString = 'tops technology';
+        let capitalizedString = capitalizeFirstLetter(inputString);
+
+        console.log(capitalizedString);
+
+    </script>
+    <hr>
+</body>
+
+</html>

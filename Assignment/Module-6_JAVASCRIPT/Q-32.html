@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-32</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Write to print factorial of given number?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        let number = 5;
+        console.log(`Factorial of ${number} is: ${factorial(number)}`);
+        
+        number = 0;
+        console.log(`Factorial of ${number} is: ${factorial(number)}`);
+        
+        number = 1;
+        console.log(`Factorial of ${number} is: ${factorial(number)}`);
+
+        function factorial(num) {
+            if (num === 0 || num === 1) {
+                return 1;
+            }
+            let result = 1;
+            for (let i = 2; i <= num; i++) {
+                result *= i;
+            }
+            return result;
+        }
+
+    </script>
+    <hr>
+</body>
+
+</html>

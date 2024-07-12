@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-82</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h3><u>What are the disadvantages of using innerHTML in JavaScript?</u></h3>
+    <pre>
+- When we write any text in innerHTML code, the old text will be removed automatically.
+
+- <b><u>Example :</u></b>
+
+  &lt;div id="d1"&gt;
+      &lt;p&gt;This is old content.&lt;/p&gt;
+  &lt;/div&gt;
+        
+  &lt;script&gt;
+      document.getElementById('d1').innerHTML+='&lt;p&gt;'This is new content';
+  &lt;/script&gt;
+
+- <b><u>Output :</u></b>
+
+    <p id="d1">
+        This is old content.
+    </p>
+    <script>
+        document.getElementById('d1').innerHTML='This is new content'; 
+    </script>
+    </pre>
+    <hr>
+</body>
+</html>

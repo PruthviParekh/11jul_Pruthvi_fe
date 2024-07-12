@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-35</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        let number = 5;
+        console.log(`Summation of numbers up to ${number} is: ${computeSummation(number)}`);
+
+        number = 10;
+        console.log(`Summation of numbers up to ${number} is: ${computeSummation(number)}`);
+
+        number = 0;
+        console.log(`Summation of numbers up to ${number} is: ${computeSummation(number)}`);
+
+        function computeSummation(number) {
+            let sum = 0;
+
+            for (let i = 1; i <= number; i++) {
+                sum += i;
+            }
+
+            return sum;
+        }
+
+    </script>
+    <hr>
+</body>
+
+</html>

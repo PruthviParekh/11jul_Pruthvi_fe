@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-61</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Check if the string contains a word Script using includes() method?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        let text1 = "JavaScript is a versatile programming language.";
+        let text2 = "Python is another popular programming language.";
+
+        let containsScript1 = text1.includes("Script");
+        let containsScript2 = text2.includes("Script");
+
+        console.log(`Does text1 contain "Script"? ${containsScript1}`); // Output: Does text1 contain "Script"? true
+        console.log(`Does text2 contain "Script"? ${containsScript2}`); // Output: Does text2 contain "Script"? false
+
+        let partialText = "JavaScript is a versatile programming language.";
+        let containsPartialScript = partialText.includes("Script", 10);
+
+        console.log(`Does partialText contain "Script" starting from index 10? ${containsPartialScript}`); // Output: true
+
+        let caseSensitiveText = "javascript is a versatile programming language.";
+        let containsCaseSensitiveScript = caseSensitiveText.includes("Script");
+
+        console.log(`Does caseSensitiveText contain "Script"? ${containsCaseSensitiveScript}`); // Output: false
+
+    </script>
+    <hr>
+</body>
+
+</html>

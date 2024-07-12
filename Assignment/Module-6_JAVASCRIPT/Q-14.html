@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-14</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h3><u>Write a JavaScript exercise to get the extension of a filename.?</u></h3>
+    <h2>Select a file and click on the button to check the file extension.</h2>
+    <div>
+      <input type="file" id="chooseFile" />
+      <input type="button" value="Check Extension" onclick="checkFileExtension();" />
+    </div>
+    <h3>
+      The file extension is a : 
+      <p class="output"></p>
+    </h3>
+    <script>
+      function checkFileExtension() {
+        fileName = document.querySelector('#chooseFile').value;
+        extension = fileName.split('.').pop();
+        document.querySelector('.output').textContent = extension;
+      };
+    </script>
+    <hr>
+</body>
+</html>

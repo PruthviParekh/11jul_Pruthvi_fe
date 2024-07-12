@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-36</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: -
+            5) in JS?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        let number = 64728;
+        console.log(`Number: ${number}`);
+        console.log(`Summation of first and last digits: ${summationFirstLastDigit(number)}`);
+
+        number = 12345;
+        console.log(`Number: ${number}`);
+        console.log(`Summation of first and last digits: ${summationFirstLastDigit(number)}`);
+
+        function summationFirstLastDigit(number) {
+            let numString = number.toString();
+
+            let firstDigit = parseInt(numString.charAt(0));
+
+            let lastDigit = parseInt(numString.charAt(numString.length - 1));
+
+            let summation = firstDigit + lastDigit;
+
+            return summation;
+        }
+
+        // Example usage:
+
+    </script>
+    <hr>
+</body>
+
+</html>

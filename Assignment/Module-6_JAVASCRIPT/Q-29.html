@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-29</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Write to show<br>
+            i. Monday to Sunday using switch case in JS?<br>
+            ii. Vowel or Consonant using switch case in JS? </u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        for (let i = 1; i <= 7; i++) {
+            console.log(`Day ${i}: ${displayDayOfWeek(i)}`);
+        }
+
+        function displayDayOfWeek(dayNumber) {
+            switch (dayNumber) {
+                case 1:
+                    return "Monday";
+                case 2:
+                    return "Tuesday";
+                case 3:
+                    return "Wednesday";
+                case 4:
+                    return "Thursday";
+                case 5:
+                    return "Friday";
+                case 6:
+                    return "Saturday";
+                case 7:
+                    return "Sunday";
+                default:
+                    return "Invalid day number. Please enter a number between 1 and 7.";
+            }
+        }
+    </script>
+    <script>
+        let character = 'A';
+        console.log(checkVowelConsonant(character));
+
+        character = 'B';
+        console.log(checkVowelConsonant(character));
+
+        character = 'E';
+        console.log(checkVowelConsonant(character));
+
+        character = '1';
+        console.log(checkVowelConsonant(character));
+
+        function checkVowelConsonant(char) {
+            char = char.toLowerCase();
+
+            switch (char) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    return `${char} is a vowel.`;
+                default:
+                    if (char >= 'a' && char <= 'z') {
+                        return `${char} is a consonant.`;
+                    } else {
+                        return `${char} is not a valid alphabet character.`;
+                    }
+            }
+        }
+
+
+    </script>
+
+    <hr>
+</body>
+
+</html>

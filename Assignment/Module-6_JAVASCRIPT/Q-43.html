@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-43</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Write a JavaScript program to convert an array of objects into CSV string?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        function arrayToCSV(data) {
+            if (!Array.isArray(data) || data.length === 0) {
+                return '';
+            }
+
+            const headers = Object.keys(data[0]);
+
+            let csv = headers.join(',') + '\n';
+
+            for (let obj of data) {
+                let row = [];
+                for (let header of headers) {
+                    row.push(obj[header]);
+                }
+                csv += row.join(',') + '\n';
+            }
+
+            return csv;
+        }
+
+        let data = [
+            { name: 'John', age: 30, city: 'New York' },
+            { name: 'Jane', age: 25, city: 'San Francisco' },
+            { name: 'Doe', age: 40, city: 'Los Angeles' }
+        ];
+
+        let csvString = arrayToCSV(data);
+
+        console.log(csvString);
+
+    </script>
+    <hr>
+</body>
+
+</html>

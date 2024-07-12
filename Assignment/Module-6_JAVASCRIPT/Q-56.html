@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-56</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h3><u>Dynamic Form Validation in JS?</u></h3>
+    <pre>
+- Dynamic form validation enhances the user experience by providing real-time feedback as the user fills out the form.
+
+- This involves adding event listeners to input fields to validate them on specific events such as input or blur.
+
+- <u>Example :</u>
+    </pre>
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><span class="error" id="emailError"></span><br><br>
+        
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number"><span class="error" id="numberError"></span><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><span class="error" id="passwordError"></span><br><br>
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"><span class="error" id="confirmPasswordError"></span><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        document.getElementById('email').addEventListener('input', validateEmail);
+        document.getElementById('number').addEventListener('input', validateNumber);
+        document.getElementById('password').addEventListener('input', validatePassword);
+        document.getElementById('confirmPassword').addEventListener('input', validateConfirmPassword);
+        document.getElementById('myForm').addEventListener('submit', validateForm);
+
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            var emailError = document.getElementById("emailError");
+
+            if (!emailPattern.test(email)) {
+                emailError.innerHTML = "Invalid email address";
+                emailError.className = "error";
+            } else {
+                emailError.innerHTML = "Valid email address";
+                emailError.className = "valid";
+            }
+        }
+
+        function validateNumber() {
+            var number = document.getElementById("number").value;
+            var numberError = document.getElementById("numberError");
+
+            if (isNaN(number) || number < 1 || number > 100) {
+                numberError.innerHTML = "Number must be between 1 and 100";
+                numberError.className = "error";
+            } else {
+                numberError.innerHTML = "Valid number";
+                numberError.className = "valid";
+            }
+        }
+
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+            var passwordError = document.getElementById("passwordError");
+
+            if (!passwordPattern.test(password)) {
+                passwordError.innerHTML = "Password must be at least 8 characters long, include an uppercase letter, a number, and a special character";
+                passwordError.className = "error";
+            } else {
+                passwordError.innerHTML = "Valid password";
+                passwordError.className = "valid";
+            }
+        }
+
+        function validateConfirmPassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var confirmPasswordError = document.getElementById("confirmPasswordError");
+
+            if (password !== confirmPassword) {
+                confirmPasswordError.innerHTML = "Passwords do not match";
+                confirmPasswordError.className = "error";
+            } else {
+                confirmPasswordError.innerHTML = "Passwords match";
+                confirmPasswordError.className = "valid";
+            }
+        }
+
+        function validateForm(event) {
+            validateEmail();
+            validateNumber();
+            validatePassword();
+            validateConfirmPassword();
+
+            var isValid = document.querySelectorAll('.error').length === 0;
+            if (!isValid) {
+                event.preventDefault(); // Prevent form submission
+            }
+        }
+    </script>
+    <hr>
+</body>
+</html>

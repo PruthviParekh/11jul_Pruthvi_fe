@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-50</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>What is the drawback of declaring methods directly in JavaScript objects?</u></h3>
+    <pre>
+<u>1>  Memory Usage :</u>
+
+- Every object instance gets its own copy of each method. If you have many instances of an object, this can lead to higher memory usage<br>  compared to using prototypes where methods are shared among all instances.
+
+<u>2>  Performance Impact :</u>
+
+- Directly declared methods may impact performance, especially in scenarios where you have many instances or frequent method calls.<br>  Prototype methods can be more optimized by the JavaScript engine.
+
+<u>3> Difficulty in Managing Updates :</u>
+
+- If you need to update or extend the behavior of an object's methods after creation, you would have to update each instance individually.<br>  This can lead to code duplication and maintenance issues.
+
+<u>4> No Encapsulation :</u>
+
+- Methods declared directly in objects do not provide encapsulation or private members. All properties and methods are publicly accessible<br>  , which can lead to potential issues with data integrity or accidental overwriting.
+
+<u>5> Prototypal Inheritance Limitations :</u>
+
+- If you later decide to refactor your code to use inheritance (prototypal inheritance in JavaScript), methods directly declared in<br>  objects may not integrate well with inherited behavior, as they are not part of the prototype chain.
+</pre>
+    <script>
+        let person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            fullName: function () {
+                return this.firstName + ' ' + this.lastName;
+            }
+        };
+
+        console.log(person.fullName()); // Outputs: "John Doe"
+
+    </script>
+    <pre><u>- Example :</u> Answer is in the console</pre>
+    <hr>
+</body>
+</html>

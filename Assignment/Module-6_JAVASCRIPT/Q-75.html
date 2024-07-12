@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-75</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h3><u>How to read and write a file using JavaScript?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        const fs = require('fs');
+
+        // Read from a file
+        fs.readFile('input.txt', 'utf8', (err, data) => {
+            if (err) {
+                console.error('Error reading the file:', err);
+                return;
+            }
+            console.log('File content:', data);
+
+            const modifiedData = data.toUpperCase();
+
+            // Write to another file
+            fs.writeFile('output.txt', modifiedData, (err) => {
+                if (err) {
+                    console.error('Error writing the file:', err);
+                    return;
+                }
+                console.log('File has been written successfully');
+            });
+        });
+
+    </script>
+</body> 
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-12</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>WAP to convert years into days and days into years?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        // Function to convert years to days
+        function yearsToDays(years) {
+          const daysInYear = 365.25; // Accounting for leap years
+          return years * daysInYear;
+        }
+        
+        // Function to convert days to years
+        function daysToYears(days) {
+          const daysInYear = 365.25; // Accounting for leap years
+          return days / daysInYear;
+        }
+        
+        // Example usage:
+        let years = 5;
+        let days = yearsToDays(years);
+        console.log(`${years} years is approximately ${days.toFixed(2)} days`);
+        
+        days = 1825;
+        years = daysToYears(days);
+        console.log(`${days} days is approximately ${years.toFixed(2)} years`);
+    </script>
+    <hr>
+</body>
+
+</html>

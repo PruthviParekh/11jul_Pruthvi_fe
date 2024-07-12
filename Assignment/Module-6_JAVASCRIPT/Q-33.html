@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-33</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Write to print Fibonacci series up to given numbers?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        function fibonacciSeries(limit) {
+            let num1 = 0, num2 = 1;
+
+            console.log(num1);
+            console.log(num2);
+
+            let nextNum;
+            while ((nextNum = num1 + num2) <= limit) {
+                console.log(nextNum);
+                num1 = num2;
+                num2 = nextNum;
+            }
+        }
+
+        fibonacciSeries(50);
+    </script>
+    <hr>
+</body>
+
+</html>

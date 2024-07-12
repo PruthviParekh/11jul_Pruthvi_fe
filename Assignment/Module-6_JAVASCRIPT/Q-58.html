@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-58</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h3><u>What is Bom vs Dom in JS?</u></h3>
+    <pre>
+<u>1> Bom (Browser Object Model) :</u>
+
+- The BOM represents the browser and provides objects and methods to interact with the browser itself, independent of the <br>  content of the web page.
+
+- It includes objects like window, navigator, screen, location, and history.
+
+<u>-> Key BOM Objects and Methods :</u>
+
+<u>1> window :</u> The global object representing the browser window. It is the root object of the BOM.
+
+- window.alert("Hello World!"); - Displays an alert box.
+- window.open("https://example.com"); - Opens a new browser window or tab.
+- window.setTimeout(function, milliseconds); - Executes a function after a specified delay.
+- window.setInterval(function, milliseconds); - Repeatedly executes a function with a fixed time delay between each call.
+
+<u>2> navigator :</u>  Provides information about the browser.
+
+- navigator.userAgent - Returns the user-agent string for the browser.
+- navigator.language - Returns the language of the browser.
+- navigator.geolocation - Provides access to the user's location.
+
+<u>3> screen :</u> Contains information about the user's screen.
+
+- screen.width - Returns the width of the user's screen.
+- screen.height - Returns the height of the user's screen.
+
+<u>4> location :</u> Contains information about the current URL.
+
+- location.href - Returns the URL of the current page.
+- location.assign("https://example.com"); - Loads a new document.
+- location.reload(); - Reloads the current page.
+
+<u>5> history :</u> Provides access to the browser's session history.
+
+- history.back(); - Loads the previous URL in the history list.
+- history.forward(); - Loads the next URL in the history list.
+-   history.go(n); - Loads a specific URL in the history list.
+
+<hr>
+<u>2> DOM (Document Object Model) :</u>
+
+- The DOM represents the structure of a web page and allows JavaScript to interact with and manipulate HTML and XML documents.
+
+- It represents the document as a tree of nodes, where each node can be an element, attribute, text, etc.
+
+<u>-> Key DOM Concepts and Methods :</u>
+
+<u>1> Document Object :</u> The root object of the DOM representing the entire HTML or XML document.
+
+- document.getElementById("id") - Returns the element with the specified ID.
+- document.getElementsByClassName("class") - Returns a collection of elements with the specified class name.
+- document.getElementsByTagName("tag") - Returns a collection of elements with the specified tag name.
+- document.querySelector("selector") - Returns the first element that matches a specified CSS selector.
+- document.querySelectorAll("selector") - Returns a static NodeList of all elements that match a specified CSS selector.
+
+<u>2> Element Object :</u> Represents an element in the document.
+
+- element.innerHTML - Gets or sets the HTML content of an element.
+- element.textContent - Gets or sets the text content of an element.
+- element.style - Gets or sets the inline CSS style of an element.
+- element.classList.add("class") - Adds a class to the element's class list.
+- element.classList.remove("class") - Removes a class from the element's class list.
+- element.appendChild(node) - Adds a new child node to an element.
+
+<u>3> Event Handling :</u> Allows interaction with the document through events.
+
+- element.addEventListener("event", function) - Attaches an event handler to an element.
+- element.removeEventListener("event", function) - Removes an event handler from an element.
+    </pre>
+    <hr>
+</body>
+</html>

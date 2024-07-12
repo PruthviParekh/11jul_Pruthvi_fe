@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-23</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h3><u>Find the Character Is Vowel or Not ?</u></h3>
+    <pre>- Answer is in the console</pre>
+    <script>
+        let character = 'A';
+        console.log(`${character}: ${isVowel(character)}`);
+
+        character = 'B';
+        console.log(`${character}: ${isVowel(character)}`);
+
+        character = 'E';
+        console.log(`${character}: ${isVowel(character)}`);
+        
+        function isVowel(char) {
+            char = char.toLowerCase();
+            const vowels = "aeiou";
+            if (vowels.includes(char)) {
+                return "The character is a vowel.";
+            } else {
+                return "The character is a constant.";
+            }
+        }
+
+    </script>
+    <hr>
+</body>
+
+</html>
