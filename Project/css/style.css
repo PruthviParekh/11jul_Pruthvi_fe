@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.main {
+    height: 735px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/img1.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.logo img {
+    /* border: 1px solid red; */
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.header {
+    height: 70px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    /* backdrop-filter: blur(4px); */
+}
+
+
+.navbar {
+    /* border: 1px solid blue; */
+    width: 40%;
+    margin-left: 600px;
+}
+
+.navbar ul {
+    /* border: 1px solid #fff; */
+    display: flex;
+}
+
+.navbar li {
+    /* border: 1px solid yellow; */
+    color: #fff;
+    margin: 15px 20px;
+    font-size: 20px;
+    padding: 7px 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar li:hover {
+    background-color: orangered;
+    border-radius: 7px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.content img {
+    height: 400px;
+    position: absolute;
+    top: 140px;
+    left: 180px;
+    /* border: 1px solid aqua;    */
+}
+
+.content p {
+    /* border: 1px solid red; */
+    color: #fff;
+    width: fit-content;
+    position: absolute;
+    top: 200px;
+    left: 545px;
+    font-size: 30px;
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.content h1 {
+    /* border: 1px solid red; */
+    color: #fff;
+    width: fit-content;
+    font-size: 200px;
+    position: absolute;
+    top: 200px;
+    left: 295px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.buttons {
+    /* border: 1px solid red; */
+    width: fit-content;
+    position: absolute;
+    top: 560px;
+    right: 265px;
+}
+
+.know,
+.ticket {
+    padding: 15px 40px;
+    font-size: 20px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+.know:hover {
+    color: black;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+.ticket:hover {
+    color: black;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+    background-color: #1c1a2d;
+    position: relative;
+}
+
+footer .ready {
+    height: 220px;
+    width: 85%;
+    /* border: 1px solid #fff; */
+    border-radius: 15px;
+    background-color: #211f33;
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    display: flex;
+    color: #fff;
+}
+
+/* .start{
+    border: 1px solid #fff;
+    margin-top: 50px;
+    height: fit-content;
+} */
+.start h1 {
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    margin-left: 45px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.start p {
+    /* border: 1px solid yellow; */
+    margin-left: 45px;
+    font-size: 22px;
+    font-family: "Po+ppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.get button {
+    border: 1px solid #2d2b44;
+    border-radius: 30px;
+    padding: 15px 40px;
+    /* font-size: 18px; */
+    /* border: none; */
+    margin-top: 85px;
+    margin-left: 365px;
+    background-image: linear-gradient(to right, orangered, #f01469);
+    color: #fff;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.get button:hover {
+    background-image: linear-gradient(to right, #f01469, orangered);
+}
+
+.footer {
+    height: 500px;
+    width: 85%;
+    /* border: 1px solid red; */
+    margin-top: 300px;
+    margin-left: 120px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    list-style: none;
+    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.company li,
+.icons {
+    color: #817da1;
+    /* line-height: ; */
+}
+
+.company h3:hover {
+    color: orangered;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.company li:hover {
+    color: orangered;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.icons :hover {
+    color: orangered;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.copyright {
+    height: 60px;
+    width: 100%;
+    /* border: 1px solid aqua; */
+    background-color: #181626;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #817da1;
+}
+
+.copyright i {
+    margin-top: 22px;
+}
+
+/* ----------------------------------------------- */
+.extraheader {
+    height: 350px;
+    background: linear-gradient(rgba(36, 59, 142, 0.6), rgba(36, 59, 142, 0.6)), url('/images/img3.jpg');
+    background-size: cover;
+}
+
+    .extranavbar h1 {
+        color: #fff;
+    width: fit-content;
+    /* border: 1px solid red; */
+    margin-top: 80px;
+    margin-left: 690px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.extranavbar p {
+    color: #fff;
+    width: fit-content;
+    /* border: 1px solid red; */
+    margin-top: 7px;
+    margin-left: 726px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.about {
+    height: 900px;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.about .img4 {
+    height: 600px;
+    width: 30%;
+    margin-top: 75px;
+    margin-left: 120px;
+    border-radius: 10px;
+}
+
+.info {
+    /* border: 1px solid blue; */
+    width: 55%;
+    position: absolute;
+    left: 640px;
+    top: 140px;
+}
+
+.info h3 {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: orangered;
+}
+
+.info .title,
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.info p {
+    font-family: "Poppins", sans-serif;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+.info .contact {
+    letter-spacing: 1px;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.about .img5 {
+    height: 275px;
+    width: 40%;
+    position: absolute;
+    top: 525px;
+    left: 500px;
+    border-radius: 10px;
+}
+
+.booking{
+    /* border: 1px solid red; */
+    height: 1500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+}
+.booking .t1{
+    height: 200px;
+    width: 80%;
+    /* border: 1px solid blue; */
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+.t1 h3{
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #1a3e53;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.t1 span{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: #3c5b6c;
+    margin-left: 30px;
+}
+.t1 p{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    color: #3c5b6c;
+    margin-left: 30px;
+}
+.t1 button{
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, orange, #f01469);
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+}  
+.gallery{
+    margin-top: 4px;
+} 
+.gallery .img6, .img11, .img13{
+    height: 400px;
+    width: 25%;
+}
+.gallery .img7, .img10, .img14{
+    height: 400px;
+    width: 29%;
+}
+.gallery .img8, .img9, .img12{
+    height: 400px;
+    width: 45.4%;
+}   
+.contact{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.contact .form{
+    height: 500px;
+    width: 50%;
+    /* border: 1px solid red; */
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 6%;
+    margin-left: 25%;
+    position: relative;
+}
+.form h2{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+.form input, textarea{
+    height: 40px;
+    width: 40%;
+    font-size: 17px;
+    border-radius: 5px;
+    /* border: 1px solid #3c5b6c; */
+    border: none;
+}
+.form button{
+    position: absolute;
+    top: 420px;
+    left: 50px;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    padding: 15px 40px;   
+    background-image: linear-gradient(to right, orange, #f01469);
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact .contactinfo{
+    height: 260px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    display: flex;
+}
+
+.contactinfo .information{
+    height: 200px;
+    width: 20%;
+    /* border: 1px solid blue; */
+    margin-top: 25px;
+    margin-left: 60px;
+    position: relative;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+.information .circle{
+    height: 80px;
+    width: 80px;
+    /* border: 1px solid red; */
+    background-color: #ffede0;
+    border-radius: 150px;
+    top: 20px;
+    left: 36%;
+    position: absolute;
+}
+.fa-location-crosshairs, .fa-phone-flip, .fa-envelope-open, .fa-stopwatch{
+    height: 50px;
+    color: orangered;
+    position: absolute;
+    top: 21px;
+}
+.information span{
+    /* border: 1px solid; */
+    color: #323539;
+    position: absolute;
+    top: 110px;
+    font-size: 20px;
+}
+.information p{
+    /* border: 1px solid; */
+    color: #212529;
+    position: absolute;
+    top: 145px;
+    font-size: 20px;
+}
+.contact iframe{
+    margin-top: 55px;
+}

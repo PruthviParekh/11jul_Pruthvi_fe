@@ -1,0 +1,155 @@
+@media (max-width: 500px)
+{
+    .main{
+        border: 1px solid red;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/img1.jpg');
+    }
+
+    .logo img{
+        /* border: 1px solid red; */
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .header{
+        position: relative;
+    }
+    .header .navbar{
+        display: none;
+    }   
+    .header .menu i{
+        /* border: 1px solid red; */
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        right: 13px;
+        top: 13px;
+    }
+    .content img{
+        top: 240px;
+        left: -30px;
+        height: 200px;
+    }
+    .content p{
+        top: 250px;
+        left: 110px;
+        font-size: 15px;
+    }
+    .content h1{
+        top: 275px;
+        left: 30px;
+        font-size: 90px;
+    }
+    .buttons{
+        display: flex;
+        /* border: 1px solid red; */
+        left: 150px;
+    }
+    .know, .ticket{
+        padding: 7px 50px;
+        font-size: 16px;
+    }
+    footer .ready{
+        height: 300px;
+        /* border: 1px solid red; */
+        width: 450px;
+        left: 15px;
+        position: relative;
+    }
+    .start h1{
+        width: 50%;
+        /* margin-left: 10px; */
+        font-size: 30px;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: -30px;
+        left: -20px;
+    }
+    .start p{
+        width: 80%;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 130px;
+        left: -20px;
+    }
+    .get button{
+        position: absolute;
+        top: 130px;
+        right: 280px;
+        padding: 10px 40px;
+    }
+    .footer{
+        height: auto;
+        display: block;
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+
+    /* ----------About.html---------- */
+    .extranavbar h1{
+        margin-left: 175px !important;
+    }
+    .extranavbar p{
+        margin-left: 185px !important;
+    }
+    .about{
+        height: 1060px;
+        /* border: 1px solid red; */
+    }
+    .about .img4{
+        width: 80%;
+        margin-left: 50px;
+    }
+    .about .img5{
+        width: 90%;
+        position: absolute;
+        top: 700px;
+        left: 25px;
+    }
+    
+    /* ----------Events.html---------- */
+    .booking{
+        height: 2550px;
+        display: block;
+        border: 1px solid red;
+    }
+    .booking .t1{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* ----------Gallery.html---------- */
+    .gallery .img8, .img9, .img12{
+        width: 100%;
+    }
+    .gallery .img6, .img11, .img13{
+        display: none;
+    }
+    .gallery .img7, .img10, .img14{
+        display: none;
+    }
+
+    /* ----------Contact.html---------- */
+    .contact{
+        height: 2300px;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .contact .form{
+        width: 100%;
+        margin-left: 0;
+    }
+    .contactinfo {
+        /* display: block; */
+        width: 2000px !important;
+        margin-left: -18px;
+        display: flex;
+        flex-direction: column;
+        height: 1000px !important;
+    }
+    .information .circle{
+        margin-left: 15px;
+    }
+    .information span, p{
+        margin-left: 50px;
+    }
+}
